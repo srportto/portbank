@@ -1,0 +1,111 @@
+{
+	"info": {
+		"_postman_id": "6e238d79-2526-41d0-abf1-0b43adaab07f",
+		"name": "Java Spring - Portbank",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Clientes",
+			"item": [
+				{
+					"name": "GetClientes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/spring-app/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-app",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GetClientes by id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/spring-app/clientes/41852298871",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-app",
+								"clientes",
+								"41852298871"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DeleteCliente by id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/spring-app/clientes/0",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-app",
+								"clientes",
+								"0"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "PostClientes",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"cpf\": \"41852298871\",\n    \"nomeCompleto\": \"Caique Silva Porto\",\n    \"dataNascimento\": \"1993-10-02\",\n    \"tipoDePessoa\": \"F\",\n    \"endereco\": {\n        \"rua\":\"Alexandrinni Esteves\",\n        \"numeroDaRua\": \"124\",\n        \"cep\": \"06502290\",\n        \"cidade\": \"Osasco\",\n        \"uf\": \"MG\"\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/spring-app/clientes",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-app",
+								"clientes"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
