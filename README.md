@@ -10,7 +10,7 @@ PortBank é uma aplicação back-end que fornece uma API RestFul para prover ser
 
 A aplicação consiste em possibilitar o cadastro de clientes com suas respectivas contas e a realização de movimentações financeiras credito/debito.
 
-## Requisitos
+## Requisitos de negócios
 - [x] Possibilitar o cadastro de clientes
 - [ ] Possibilitar a criação de contas para um cliente (corrente, poupança, investimento)
 - [ ] Listar todas as contas que um cliente possui.
@@ -23,6 +23,11 @@ A aplicação consiste em possibilitar o cadastro de clientes com suas respectiv
 - [ ] Listar todas as transações realizadas por um cliente
 - [ ] Possibilitar consulta inteligente de operações realizadas por um cliente (data, valor, descrição operação).
 
+## Requisitos de técnicos
+- [ ] Atender requisições de pedidos de JSON e XML(Content negotiation)
+- [ ] Configurar Pool de conexões para alem do "default (10)" do Spring Data Jpa
+- [ ] Implementar controle de sessão
+- [ ] Utilizar "Migrations" como estrategia de manutenção de banco de dados
 
 
 
@@ -35,10 +40,29 @@ A aplicação consiste em possibilitar o cadastro de clientes com suas respectiv
 
 # Tecnologias utilizadas
 ## Back end
-- Java
+- Java 11 via OpenJDK
+  - Herança
+  - Polimorfismo
+  - Interface
+  - Generics
+  - Override
+  - Sobrecargas 
+  - Manipulação de datas
+  - Manipulação de Strings  
+  - Manipulação de arrays
+  - Manipulação de collections    
 - Spring Boot
+- Spring MVC
+- Spring Security
+- Spring Data JPA  
 - JPA / Hibernate
 - Maven
+- FlayWay (migrations)
+- JSON
+- MySql  
+- Intellij IDE
+- Lombok
+
 ## Front end
 - Não há 
 
@@ -49,7 +73,11 @@ A aplicação consiste em possibilitar o cadastro de clientes com suas respectiv
 # Como executar o projeto
 
 ## Back end
-Pré-requisitos: Java 11
+Pré-requisitos: 
+* Java 11
+* MySql server 8.0
+* MySql Workbench 8.0 CE
+
 
 ```bash
 # clonar repositório
