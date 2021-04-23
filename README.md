@@ -28,6 +28,11 @@ A aplicação consiste em possibilitar o cadastro de clientes com suas respectiv
 - [ ] Configurar Pool de conexões para alem do "default (10)" do Spring Data Jpa
 - [ ] Implementar controle de sessão
 - [ ] Utilizar "Migrations" como estrategia de manutenção de banco de dados
+- [ ] Criptografar senha de acesso dos clientes 
+- [ ] Realizar mapeamento objeto relacional (oneToOne)
+- [ ] Realizar mapeamento objeto relacional (oneToMany)
+- [ ] Realizar mapeamento objeto relacional (ManyToOne)
+- [ ] Realizar mapeamento objeto relacional (ManyToMany)
 
 
 
