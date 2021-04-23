@@ -2,8 +2,6 @@ package br.com.portbank.entity;
 
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.*;
 import java.io.Serializable;
@@ -21,7 +19,7 @@ public class Cliente implements Serializable {
 
     @EqualsAndHashCode.Include  //informacao ao lombok que esse atributo deve ser considerado pra gerar equals and hashcode
     @Id
-    private long cpf;
+    private long cpfId;
 
 
     @Column(name = "nome_completo", nullable = false)

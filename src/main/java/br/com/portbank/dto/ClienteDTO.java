@@ -23,7 +23,7 @@ public class ClienteDTO {
 
     // new
     public ClienteDTO (Cliente cliente){
-        this.cpf = cliente.getCpf();
+        this.cpf = cliente.getCpfId();
         this.nomeCompleto = cliente.getNomeCompleto();
 
         SimpleDateFormat formatador = new SimpleDateFormat("yyyy-MM-dd");

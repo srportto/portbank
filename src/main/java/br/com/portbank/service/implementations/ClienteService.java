@@ -18,33 +18,26 @@ public class ClienteService implements IClienteService {
 
     @Override
     public Cliente getClienteById(long id) {
-        System.out.println("getClienteById()");
         return clienteRepository.findById(id).get();
     }
 
     @Override
     public List<Cliente> getAllClientes() {
-        System.out.println("getAllClientes()");
         List<Cliente> lista = new ArrayList<>();
         clienteRepository.findAll().forEach(e -> lista.add(e));
         return lista;
     }
 
-    public Cliente addCliente(Cliente cliente){
-        System.out.println("addCliente()");
-        System.out.println("esse eh o cliente que chegou: "+ cliente.toString());
+    public Cliente addCliente(Cliente cliente) {
         clienteRepository.save(cliente);
         return cliente;
     }
 
     public Cliente updateCliente(Cliente cliente) {
-        System.out.println("apdateCliente()");
-        System.out.println("esse eh o cliente que chegou: "+cliente.toString());
         return clienteRepository.save(cliente);
     }
 
     public void deleteCliente(long id) {
-        System.out.println("deleteCliente()");
         clienteRepository.delete(clienteRepository.findById(id).get());
     }
 }
