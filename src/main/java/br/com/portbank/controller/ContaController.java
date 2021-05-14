@@ -33,6 +33,8 @@ public class ContaController {
     @ResponseStatus(HttpStatus.CREATED)
     public Conta addConta(@RequestBody ContaDTO contaDTO) {
         System.out.println("objeto chegou: \n"+contaDTO.toString());
+        // teste de colaboracao projeto caique
+        System.out.println("vamos colaborar!");
 
         String tipoConta = contaDTO.getTipoConta();
         Conta conta;
